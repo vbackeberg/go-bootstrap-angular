@@ -1,53 +1,3 @@
-function getRandomDate(from: Date, to: Date) {
-  const fromTime = from.getTime();
-  const toTime = to.getTime();
-  return new Date(fromTime + Math.random() * (toTime - fromTime));
-}
-
-function randomSkillset() {
-  return skills
-    .map((x) => ({ x, r: Math.random() }))
-    .sort((a, b) => a.r - b.r)
-    .map((a) => a.x)
-    .slice(0, 3)
-    .join(", ");
-}
-
-const skills = [
-  "C#",
-  "MongoDB",
-  "Docker",
-  "TeamCity",
-  "Trello",
-  "Agile Retrospectives",
-  "GitHub",
-  "Git",
-  "Domain Driven Design (DDD)",
-  "Unit Testing",
-  "Selenium",
-  "Kibana",
-  "AngularJS",
-  "JavaScript",
-  "TestCafe",
-  "Java",
-  "Angular",
-  "Spring Boot",
-  "SQL",
-  "MQSeries",
-  "REST",
-  "SOAP",
-  "Test Driven Development (TDD)",
-  "Pair Programming",
-  "Cypress",
-  "Product Owner",
-  "Product Manager",
-  "Agile Coach",
-  "Interim CTO",
-  "Scrum Master",
-  "React",
-  "iOS",
-];
-
 export interface Boid {
   firstName: string;
   lastName: string;
@@ -60,400 +10,280 @@ export const returnedBoids: Boid[] = [
     firstName: "Babe",
     lastName: "Bennett",
     id: 0,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toLocaleDateString("DE"),
-    skillset: randomSkillset(),
+    availableFrom: "5.3.2022",
+    skillset: "Kibana, Product Owner, C#",
   },
   {
     firstName: "Balthazar",
     lastName: "Blake",
     id: 1,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "7.2.2022",
+    skillset: "React, Pair Programming, Unit Testing",
   },
   {
     firstName: "Benjamin",
     lastName: "Button",
     id: 2,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "25.1.2022",
+    skillset: "Unit Testing, SQL, Domain Driven Design (DDD)",
   },
   {
     firstName: "Betsy",
     lastName: "Bell",
     id: 3,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "8.1.2022",
+    skillset: "Pair Programming, Trello, Agile Coach",
   },
   {
     firstName: "Billy",
     lastName: "Brown",
     id: 4,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "24.2.2022",
+    skillset: "SOAP, Product Owner, Test Driven Development (TDD)",
   },
   {
     firstName: "Bobby",
     lastName: "Boucher",
     id: 5,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "28.2.2022",
+    skillset: "React, iOS, TeamCity",
   },
   {
     firstName: "Chris",
     lastName: "Cole",
     id: 6,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "28.1.2022",
+    skillset: "Pair Programming, React, Selenium",
   },
   {
     firstName: "Clara",
     lastName: "Clayton",
     id: 7,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "10.1.2022",
+    skillset: "REST, Agile Retrospectives, Interim CTO",
   },
   {
     firstName: "Dale",
     lastName: "Denton",
     id: 8,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "15.2.2022",
+    skillset: "Product Owner, Spring Boot, JavaScript",
   },
   {
     firstName: "Dawn",
     lastName: "Davenport",
     id: 9,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "14.2.2022",
+    skillset: "Angular, Git, Java",
   },
   {
     firstName: "Donnie",
     lastName: "Darko",
     id: 10,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "26.1.2022",
+    skillset: "Kibana, AngularJS, REST",
   },
   {
     firstName: "Donny",
     lastName: "Donowitz",
     id: 11,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "22.2.2022",
+    skillset: "REST, JavaScript, Test Driven Development (TDD)",
   },
   {
     firstName: "Francine",
     lastName: "Fishpaw",
     id: 12,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "16.2.2022",
+    skillset: "React, Java, MongoDB",
   },
   {
     firstName: "Grant",
     lastName: "Grant",
     id: 13,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "25.1.2022",
+    skillset: "AngularJS, Kibana, Selenium",
   },
   {
     firstName: "Heather",
     lastName: "Holloway",
     id: 14,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "20.3.2022",
+    skillset: "Selenium, iOS, Agile Coach",
   },
   {
     firstName: "Hubert",
     lastName: "Hawkins",
     id: 15,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "9.2.2022",
+    skillset: "Trello, Interim CTO, REST",
   },
   {
     firstName: "James",
     lastName: "Johnston",
     id: 16,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "19.12.2021",
+    skillset: "Agile Coach, Trello, Interim CTO",
   },
   {
     firstName: "Jared",
     lastName: "James",
     id: 17,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "11.12.2021",
+    skillset: "AngularJS, TeamCity, Selenium",
   },
   {
     firstName: "Jenny",
     lastName: "Johnson",
     id: 18,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "12.12.2021",
+    skillset: "Angular, Java, React",
   },
   {
     firstName: "Leta",
     lastName: "Lestrange",
     id: 19,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "20.3.2022",
+    skillset: "Selenium, C#, GitHub",
   },
   {
     firstName: "Linda",
     lastName: "Litske",
     id: 20,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "22.12.2021",
+    skillset: "Product Manager, MQSeries, Agile Coach",
   },
   {
     firstName: "Lorne",
     lastName: "Lutch",
     id: 21,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "14.12.2021",
+    skillset: "Spring Boot, Product Owner, Product Manager",
   },
   {
     firstName: "Marty",
     lastName: "McFly",
     id: 22,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "25.2.2022",
+    skillset: "Product Manager, Test Driven Development (TDD), Java",
   },
   {
     firstName: "Nemo",
     lastName: "Nobody",
     id: 23,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "26.1.2022",
+    skillset: "SOAP, Product Manager, Test Driven Development (TDD)",
   },
   {
     firstName: "Nick",
     lastName: "Naylor",
     id: 24,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "28.11.2021",
+    skillset: "MongoDB, React, Cypress",
   },
   {
     firstName: "Penny",
     lastName: "Priddy",
     id: 25,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "14.12.2021",
+    skillset: "JavaScript, Docker, Pair Programming",
   },
   {
     firstName: "Ray",
     lastName: "Reed",
     id: 26,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "20.3.2022",
+    skillset: "Agile Retrospectives, Unit Testing, Product Owner",
   },
   {
     firstName: "Richard",
     lastName: "Riddick",
     id: 27,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "4.1.2022",
+    skillset: "Interim CTO, REST, Spring Boot",
   },
   {
     firstName: "Saul",
     lastName: "Silver",
     id: 28,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "11.3.2022",
+    skillset: "JavaScript, C#, Pair Programming",
   },
   {
     firstName: "Steve",
     lastName: "Stifler",
     id: 29,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "13.2.2022",
+    skillset: "AngularJS, MQSeries, Git",
   },
   {
     firstName: "Sylvia",
     lastName: "Stickles",
     id: 30,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "14.12.2021",
+    skillset: "Trello, SQL, Java",
   },
   {
     firstName: "Tony",
     lastName: "Taira",
     id: 31,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "26.1.2022",
+    skillset: "Git, Pair Programming, GitHub",
   },
   {
     firstName: "Tracy",
     lastName: "Turnbald",
     id: 32,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "28.2.2022",
+    skillset: "Java, Pair Programming, Unit Testing",
   },
   {
     firstName: "Veronica",
     lastName: "Vaughn",
     id: 33,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "29.12.2021",
+    skillset: "Docker, Spring Boot, C#",
   },
   {
     firstName: "Vic",
     lastName: "Vega",
     id: 34,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "14.12.2021",
+    skillset: "REST, Product Owner, Docker",
   },
   {
     firstName: "Vicki",
     lastName: "Vallencourt",
     id: 35,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "2.2.2022",
+    skillset: "Kibana, Spring Boot, SOAP",
   },
   {
     firstName: "Vincent",
     lastName: "Vaga",
     id: 36,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "7.3.2022",
+    skillset: "Cypress, SOAP, Domain Driven Design (DDD)",
   },
   {
     firstName: "Virginia",
     lastName: "Venit",
     id: 37,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "15.12.2021",
+    skillset: "AngularJS, Pair Programming, React",
   },
   {
     firstName: "Wade",
     lastName: "Walker",
     id: 38,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "10.3.2022",
+    skillset: "Unit Testing, Angular, Spring Boot",
   },
   {
     firstName: "Wicket",
     lastName: "Wystri",
     id: 39,
-    availableFrom: getRandomDate(
-      new Date(2021, 10, 28),
-      new Date(2022, 2, 24)
-    ).toDateString(),
-    skillset: randomSkillset(),
+    availableFrom: "10.1.2022",
+    skillset: "TestCafe, iOS, MongoDB",
   },
 ];
