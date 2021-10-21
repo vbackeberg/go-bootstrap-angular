@@ -1,4 +1,4 @@
-import { AfterViewChecked, AfterViewInit, Component } from "@angular/core";
+import { AfterViewChecked, Component } from "@angular/core";
 import { Modal } from "bootstrap";
 
 @Component({
