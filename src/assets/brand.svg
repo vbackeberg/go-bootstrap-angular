@@ -24,7 +24,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.0998546"
-     inkscape:cx="44.096738"
+     inkscape:cx="21.821066"
      inkscape:cy="67.736226"
      inkscape:window-width="2560"
      inkscape:window-height="1377"
@@ -91,7 +91,7 @@
        transform="matrix(0.35277777,0,0,-0.35277777,44.83643,185.82336)">
       <path
          d="M 52.916667,0.333 H 283.08333 A 52.916667,52.916667 45 0 1 336,53.249667 V 282.75033 A 52.916667,52.916667 135 0 1 283.08333,335.667 l -230.166663,0 A 52.916667,52.916667 45 0 1 0,282.75033 V 53.249667 A 52.916667,52.916667 135 0 1 52.916667,0.333 Z"
-         style="fill:#7473bd;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="fill:#4a49cb;fill-opacity:1;fill-rule:nonzero;stroke:none"
          id="path17"
          inkscape:path-effect="#path-effect1223"
          inkscape:original-d="M 0,0.333 H 336 V 335.667 H 0 Z" />
