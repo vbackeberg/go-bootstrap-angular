@@ -1,5 +1,8 @@
 # Go Bootstrap Angular
 
+➡️ [Click here to reach the step by step guide](https://github.com/vbackeberg/go-bootstrap-angular/blob/main/Guide.md)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
 ## Development server
