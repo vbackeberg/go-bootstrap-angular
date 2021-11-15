@@ -106,8 +106,9 @@
     #### **`assignments.component.html`**
 
     ```html
-    <div class="container">
-      <h1 class="mb-5">Assignments</h1>
+    <div ... >
+      <h1 ... ></h1>
+    
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
         <div *ngFor="let assignment of assignments">
           <div class="card">
@@ -123,6 +124,7 @@
           </div>
         </div>
       </div>
+    
     </div>
     ```
 
@@ -132,18 +134,23 @@
     <details>
     <summary>Code hint here</summary>
 
-    #### **`assignments.component.html`**
-
-        ```html
-        <div class="row gy-5 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
-        ...
-        </div>
-        ```
-
     #### **`app.component.html`**
 
     ```html
     <main class="mt-4"></main>
+    ```
+
+    #### **`assignments.component.html`**
+
+    ```html
+    <div ... >
+      <h1 ... >
+    
+      <div class="row gy-5 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+      ...
+      </div>
+    
+    </div>
     ```
 
     </details>
@@ -156,6 +163,8 @@
     #### **`assignments.component.html`**
 
     ```html
+    [... *ngFor]
+    
     <ng-container *ngIf="loading">
       <div *ngFor="let i of [1, 2, 3, 4]">
         <div class="card">
@@ -230,30 +239,35 @@
     #### **`boids.component.html`**
 
     ```html
-    <table class="table table-hover">
-      <thead class="table-light">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Availabe from</th>
-          <th scope="col">Skillset</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let boid of boids">
-          <td>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" />
-            </div>
-          </td>
-          <td>{{ boid.firstName }}</td>
-          <td>{{ boid.lastName }}</td>
-          <td>{{ boid.availableFrom }}</td>
-          <td>{{ boid.skillset }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div ... >
+      <h1 ... ></h1>
+    
+      <table class="table table-hover">
+        <thead class="table-light">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Availabe from</th>
+            <th scope="col">Skillset</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let boid of boids">
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" />
+              </div>
+            </td>
+            <td>{{ boid.firstName }}</td>
+            <td>{{ boid.lastName }}</td>
+            <td>{{ boid.availableFrom }}</td>
+            <td>{{ boid.skillset }}</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    </div>
     ```
 
     </details>
@@ -266,6 +280,8 @@
     #### **`boids.component.html`**
 
     ```html
+    [... table]
+    
     <div
       *ngIf="loading"
       class="position-absolute top-50 start-50 translate-middle d-flex gap-3"
@@ -305,8 +321,8 @@
         Add Boid
       </button>
     </div>
-
-    ...[below table]
+    
+    [... table]
 
     <div class="modal fade" id="addBoidModal" tabindex="-1">
       <div
@@ -321,7 +337,9 @@
               data-bs-dismiss="modal"
             ></button>
           </div>
+    
           <div class="modal-body"></div>
+    
           <div class="modal-footer">
             <button
               type="button"
@@ -347,6 +365,8 @@
     #### **`boids.component.html`**
 
     ```html
+    [... modal-header]
+    
     <div class="modal-body">
       <form>
         <div class="container-fluid">
@@ -375,6 +395,8 @@
         </div>
       </form>
     </div>
+    
+    [... modal-footer]
     ```
 
     </details>
